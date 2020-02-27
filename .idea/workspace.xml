@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8038794-b1e5-42df-89d3-69a946fa5c07" name="Default Changelist" comment="" />
+    <list default="true" id="f8038794-b1e5-42df-89d3-69a946fa5c07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled_jar/untitled.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled_jar/untitled.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ass_01/IF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ass_01/IF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ass_01/SF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ass_01/SF.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,16 +39,17 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="untitled" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ass_01/SF.java" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lucene_1" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
-  <component name="RunManager" selected="Application.SF">
+  <component name="RunManager" selected="Application.IF">
     <configuration name="IF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ass_01.IF" />
       <module name="untitled" />
+      <option name="PROGRAM_PARAMETERS" value="-docs cran\\cran.all.1400 -queries cran\\cran.qry" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ass_01.*" />
@@ -67,10 +73,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.IF" />
+      <item itemvalue="Application.SF" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SF" />
         <item itemvalue="Application.IF" />
+        <item itemvalue="Application.SF" />
       </list>
     </recent_temporary>
   </component>
@@ -88,38 +98,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582821884000">
+    <state x="311" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582828426428">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582821884000" />
+    <state x="311" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582828426428" />
     <state x="516" y="128" key="DetectedRootsChooserDialog" timestamp="1582801832221">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="128" key="DetectedRootsChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1582801832221" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1582803495687">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1582824718850">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582803495687" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1582803322113">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582824718850" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1582828430739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582803322113" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1582803322112">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582828430739" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1582828430739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582803322112" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1582803322112">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582828430739" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1582828430738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582803322112" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1582803322112">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582828430738" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1582828430739">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582803322112" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1582822024706">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582828430739" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1582827912244">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582822024706" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582827912244" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582823877186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

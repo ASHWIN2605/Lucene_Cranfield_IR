@@ -20,6 +20,7 @@ import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
@@ -35,6 +36,7 @@ public class IF {
                 + "in INDEX_PATH that can be searched with SearchFiles";
         String indexPath = "index";
         String docsPath = null;
+        String queries = null;
         boolean create = true;
         for (int i = 0; i < args.length; i++) {
             if ("-index".equals(args[i])) {
@@ -42,14 +44,17 @@ public class IF {
                 i++;
             } else if ("-docs".equals(args[i])) {
                 docsPath = args[i + 1];
+                i++;}
+            else if ("-queries".equals((args[i]))){
+                queries = args[i+1];
                 i++;
-            } else if ("-update".equals(args[i])) {
+            }
+            else if ("-update".equals(args[i])) {
                 create = false;
             }
         }
 
         //path for cran-field data
-        docsPath="cran\\cran.all.1400";
 
         if (docsPath == null) {
             System.err.println("Usage: " + usage);
@@ -98,10 +103,14 @@ public class IF {
             // writer.forceMerge(1);
 
             writer.close();
+            //CALL SEARCHER
+            SF searcher = new SF();
+            searcher.searchcran(queries);
+
 
             Date end = new Date();
             System.out.println(end.getTime() - start.getTime() + " total milliseconds");
-        } catch (IOException e) {
+        } catch (IOException | ParseException e) {
             System.out.println(" caught a " + e.getClass() + "\n with message: " + e.getMessage());
         }
     }

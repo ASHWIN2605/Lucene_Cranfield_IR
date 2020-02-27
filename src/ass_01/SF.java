@@ -1,11 +1,9 @@
 package ass_01;
 
-import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.io.PrintWriter;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
@@ -13,6 +11,7 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
@@ -28,12 +27,9 @@ public class SF {
 
 
     /** Simple command-line based search demo. */
-    public static void main(String[] args) throws Exception {
+    public void searchcran(String queriesPath) throws IOException, ParseException {
         String usage = "Usage:\tjava org.apache.lucene.demo.SearchFiles [-index dir] [-field f] [-repeat n] [-queries file] [-query string] [-raw] [-paging hitsPerPage]\n\nSee http://lucene.apache.org/core/4_1_0/demo/ for details.";
-        if (args.length > 0 && ("-h".equals(args[0]) || "-help".equals(args[0]))) {
-            System.out.println(usage);
-            System.exit(0);
-        }
+
 
         String index = "index";
         String queryString = null;
@@ -51,7 +47,7 @@ public class SF {
 
         //---------------- Read in and parse queries ----------------
 
-        String queriesPath = "cran\\cran.qry";
+        //String queriesPath = "cran\\cran.qry";
         BufferedReader buffer = Files.newBufferedReader(Paths.get(queriesPath), StandardCharsets.UTF_8);
         //Multifield query parser used so as to query in multiple fields including heading,answers etc
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[] {"heading","author","reference","answer"}, analyzer);
@@ -59,6 +55,7 @@ public class SF {
         Integer queryIterator = 1;
         String line_content;
         Boolean flag = true;
+
 
         System.out.println("Reading queries and creating search results.");
 
