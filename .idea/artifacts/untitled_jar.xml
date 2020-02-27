@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="untitled:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/untitled_jar</output-path>
+    <root id="archive" name="untitled.jar">
+      <element id="module-output" name="untitled" />
+      <element id="file-copy" path="D:/Sem_2/Information_Retrival_and_web_search/lucene-8.4.1/lucene-8.4.1/analysis/common/lucene-analyzers-common-8.4.1.jar" />
+      <element id="file-copy" path="D:/Sem_2/Information_Retrival_and_web_search/lucene-8.4.1/lucene-8.4.1/core/lucene-core-8.4.1.jar" />
+      <element id="file-copy" path="D:/Sem_2/Information_Retrival_and_web_search/lucene-8.4.1/lucene-8.4.1/queryparser/lucene-queryparser-8.4.1.jar" />
+    </root>
+  </artifact>
+</component>
